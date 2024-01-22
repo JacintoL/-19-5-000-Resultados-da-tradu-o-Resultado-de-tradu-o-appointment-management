@@ -1,0 +1,112 @@
+/*Códigos Cores*/
+:root{
+    --Background: #D2691E;
+    --texto: #000000;
+    --botao: #D2691E;	
+    --botaoHover: #D2691E;
+    --separador: #D2691E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--Background);
+}
+
+.navegacao{
+    background-color: var(--separador);
+    height: 50px;
+    border-bottom: 3px solid var(--botao);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegacao .caixa-botoes{
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacao input[type=submit]{
+   margin-right: 20px;
+   padding: 2px 5px 2px 5px;
+   background-color: var(--botao);
+   color: var(--separador);
+   border: none;
+   font-size: 13px;
+   font-weight: bold;
+   border-radius: 3px;
+   transition: .5s;
+}
+
+.navegacao input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--botaoHover);
+    transition: .5s;
+}
+
+.navegacao .logotipo{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--botao);
+    transition: .5s;
+}
+
+.navegacao .logotipo:hover{
+    color: var(--botaoHover);
+    transition: .5s;
+}
+
+footer{
+    bottom: 0;
+    margin-top: 50px;
+    background: var(--separador);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 10px 50px;
+}
+
+.footer-esquerda, .footer-direita{
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.footer-esquerda h3{
+    color: var(--botao);
+    letter-spacing: 1px;
+}
+
+.footer-esquerda .footer-links a{
+    color: var(--botaoHover);
+    font-size: 12px;
+    letter-spacing: 0px;
+    transition: .5s;
+    margin-right: 10px;
+}
+
+.footer-esquerda .footer-links a:hover{
+    color: var(--botao);
+    transition: .5s;
+}
+
+.footer-direita .footer-titulo{
+    font-size: 15px;
+    color: var(--botao);
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.footer-direita .footer-texto{
+    font-size: 12px;
+    color: lightgrey;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,68 @@
+/*Códigos Cores*/
+:root{
+    --background: #ffffff;
+    --texto: #000000;
+    --botao: #D2691E;
+    --botaoHover: #D2691E;
+    --separador: #D2691E;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    background-color: var(--separador);
+    width: 500px;
+    height: 650px;
+    margin: 100px auto 0px;
+}
+
+.formulario h3{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    margin-bottom: 50px;
+    color: var(--botao);
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--botao);
+}
+
+.formulario .input-div{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: var(--background);
+}
+
+.formulario .input-div input{
+    width: 250px;
+}
+
+.formulario .botao{
+    background-color: var(--botao);
+    border-style: none;
+    padding: 3px 5px 3px 5px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-size: 15px;
+    width: 450px;
+}
+
+.formulario .botao:hover{
+    background-color: var(--botaoHover);
+    transition: .5s;
+}
+
+.formulario a{
+    color: var(--botao);
+    transition: .5s;
+    font-size: 12px;
+}
+
+.formulario a:hover{
+    color: var(--botaoHover);
+    transition: .5s;    
+}

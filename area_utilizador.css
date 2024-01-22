@@ -1,0 +1,37 @@
+/*Códigos Cores*/
+:root{
+    --background: #ffffff;
+    --texto: #000000;
+    --botao: #66d9fc;
+    --botaoHover: #4298b4;
+    --separador: #202020;
+}
+
+.seccao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    min-height: 60vh
+}
+
+.seccao input{
+    padding: 10px 5px 10px 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    background-color: var(--botao);
+    color: var(--separador);
+    border: none;
+    border-radius: 3px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.seccao input:hover{
+    cursor: pointer;
+    background-color: var(--botaoHover);
+    transition: .5s;
+}
